@@ -1,5 +1,11 @@
 angular.module('shortly.shorten', [])
 
 .controller('ShortenController', function ($scope, $location, Links) {
-  // Your code here
+////////////////////////////////////////////////////////////
+////Might need to pass a link into addLink to make it work//
+////////////////////////////////////////////////////////////
+  $scope.link = {};
+  $scope.addLink = function() {
+    Links.addOne();
+  };
 });
